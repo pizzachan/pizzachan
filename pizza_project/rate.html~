@@ -1,0 +1,10 @@
+<html>
+<body>
+	<h1>Rate</h1>
+	<form action="/rate" method="post">
+		Score (1-10):
+	<input name="rate"/><br>
+	<input type="submit" value="Rate">
+	</form>
+</body>
+</html>

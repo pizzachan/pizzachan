@@ -1,0 +1,16 @@
+<html>
+<body>
+<h1>Restaurants</h1>
+<h2>User:demo</h2>
+<h2>Showing <%=restaurants.length %> documents</h2><br>
+<a href='/new'>New</a><br>
+
+  <% if (restaurants){restaurants.forEach(function(r) { %>
+  <a href="/display?id=<%= r._id %>">
+  <%= r.Name %>
+  </a>
+  <br>
+  <% })} %>
+<button onclick="location.href='/logout'">Logout</button><br>
+</body>
+</html>

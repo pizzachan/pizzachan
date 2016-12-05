@@ -1,0 +1,17 @@
+<html>
+<body>
+<h1>Create New Restaurant</h1>
+	<form action="/create" method="post" enctype="multipart/form-data">
+		Name<input type="text" name="Name"required><br>
+		Borough<input type="text" name="Borough"><br>
+		Cuisine<input type="text" name="Cuisine"><br>
+		Street<input type="text" name="Street"><br>
+		Building<input type="text" name="Building"><br>
+		Zipcode<input type="text" name="Zipcode"><br>
+		GPS Coordinates(lon.)<input type="number" step="any" name="lon" max="180" min="-180"><br>
+		GPS Coordinates(lat.)<input type="number" step="any" name="lat" max="85" min="-85"><br>
+		 <input type="file" name="sampleFile" /><br>
+		<input type="submit" value="Create"><Button onclick="window.history.back();">Go Back</Button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{Name:'123',
+Borough:'123',
+Cuisine:'123',
+Street:'123',
+Building:'123',
+Zipcode:'123',
+lon:  -73.9557413,
+ lat: 40.7720266,
+owner:'demo',
+grades : [
+ {date : ISODate("2014-10-01T00:00:00Z"),
+ user : "demo",
+ score : 8
+ },
+ {
+ date : ISODate("2014-01-16T00:00:00Z"),
+ user : "user",
+ score : 9
+ }
+]}
+{Name:'234',
+Borough:'123',
+Cuisine:'123',
+Street:'123',
+Building:'123',
+Zipcode:'123',
+lon:  -73.9557413,
+ lat: 40.7720266,
+owner:'demo',
+grades : [
+ {date : ISODate("2014-10-01T00:00:00Z"),
+ user : "demo",
+ score : 9
+ },
+ {
+ date : ISODate("2014-01-16T00:00:00Z"),
+ user : "user",
+ score : 2
+ }
+]}

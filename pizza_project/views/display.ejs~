@@ -1,0 +1,23 @@
+<html>
+<body>
+<h1><%=restaurant.Name%></h1>
+<img src="data:<%=restaurant.mimetype%>;base64,<%=restaurant.data%>"/><br>
+Borough:<%=restaurant.Borough%><br>
+Cuisine:<%=restaurant.Cuisine%><br>
+Street:<%=restaurant.Street%><br>
+Building:<%=restaurant.Building%><br>
+Zipcode:<%=restaurant.Zipcode%><br>
+GPS: [<%=restaurant.lon%>,<%=restaurant.lat%>]<br>
+<!--Rating:<%=restaurant.rating%><br> -->
+<% if (restaurant.grades){restaurant.grades.forEach(function(g) { %>
+  
+ (<%= g.user %>)<%= g.score %>/10<br>
+  <% })} %>
+Created by: <%=restaurant.owner%><br>
+<a href="/gmap?lon=<%=restaurant.lon%>&lat=<%=restaurant.lat%>&zoom=18">Google Map</a><br>
+<Button onclick="location.href='/rate?id=<%=restaurant._id%>'">Rate</Button>
+<Button onclick="location.href='/edit?id=<%=restaurant._id%>'">Edit</Button>
+<Button onclick="location.href='/delete?id=<%=restaurant._id%>'">Delete</Button>
+<Button onclick="location.href='/'">Go Back</Button>
+</body>
+</html>

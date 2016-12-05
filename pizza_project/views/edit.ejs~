@@ -1,0 +1,20 @@
+<html>
+<body>
+<h1>Edit Restaurant:<%=restaurant.Name%></h1>
+	<form action="/edit" method="post" enctype="multipart/form-data">
+		Name<input type="text" name="Name" value="<%=restaurant.Name%>"><br>
+		Borough<input type="text" name="Borough" value="<%=restaurant.Borough%>"><br>
+		Cuisine<input type="text" name="Cuisine" value="<%=restaurant.Cuisine%>"><br>
+		Street<input type="text" name="Street" value="<%=restaurant.Street%>"><br>
+		Building<input type="text" name="Cuisine" value="<%=restaurant.Building%>"><br>
+		Zipcode<input type="text" name="Zipcode" value="<%=restaurant.Zipcode%>"><br>
+		GPS Coordinates(lon.)<input type="number" step="any" name="lon" value="<%=restaurant.lon%>" max="" min=""><br>
+		GPS Coordinates(lat.)<input type="number" step="any" name="lat" value="<%=restaurant.lat%>" max="85" min="-85"><br>
+		<input type="hidden" name="_id" value="<%=restaurant._id%>">
+	        <input name="sampleFile" type="file"><br>
+		<input type="submit" value="Edit"><Button onclick="window.history.back();">Go Back</Button>
+	</form>	
+		
+
+</body>
+</html>
